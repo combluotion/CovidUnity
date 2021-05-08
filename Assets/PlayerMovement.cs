@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb2;
     SpriteRenderer spriteRenderer;
     Animator animator;
+
     public bool betterJump = true;
     public float highJump = 0.5f;
     public float lowJump = 1f;
@@ -43,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2.velocity = new Vector2(rb2.velocity.x,jumpSpeed);
             animator.SetBool("Run",false);
-            animator.SetBool("Jump",true);
+            animator.SetBool("Jump",true);            
         }
         if(!Input.GetKey("space"))
         {
