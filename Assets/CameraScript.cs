@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    public GameObject SimonPlayer;
+public Transform player;
+  public Vector3 offset;
     void Update()
-    {
-        Vector3 position = transform.position;
-        position.x = SimonPlayer.transform.position.x;
-        transform.position = position;
+    { 
+ transform.position = new Vector3 (player.position.x + offset.x, player.position.y + offset.y, offset.z); // Camera follows the player with specified offset position
 
     }
 }
