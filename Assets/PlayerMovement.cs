@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float runSpeed = 1;
     public float jumpSpeed = 1;
+    public bool isHurt = false;
     Rigidbody2D rb2;
     SpriteRenderer spriteRenderer;
     Animator animator;
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     
     void FixedUpdate()
     {
+        if(!isHurt){
         if(Input.GetKey("d") || Input.GetKey("right")){
             rb2.velocity = new Vector2(runSpeed,rb2.velocity.y);
             spriteRenderer.flipX = false;
@@ -63,5 +65,15 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
+        }
     }
+
+IEnumerator HurtCharacter()
+{
+    isHurt = true;
+    animator.SetBool("Hurt",true);
+    yield return new WaitForSeconds(1.5f);
+    animator.SetBool("Hurt",false);
+    isHurt = false;
+}
 }
