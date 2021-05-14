@@ -167,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 1
   jumpSpeed: 3
+  isHurt: 0
   betterJump: 1
   highJump: 0.5
   lowJump: 1
