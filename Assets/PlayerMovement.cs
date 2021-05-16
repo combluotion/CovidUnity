@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb2;
     SpriteRenderer spriteRenderer;
     Animator animator;
+    public GameObject BalaPrefab;
 
     public bool betterJump = true;
     public float highJump = 0.5f;
@@ -65,7 +66,20 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
+
+            if (Input.GetKey(KeyCode.E))
+            {
+                Shoot();
+            }
         }
+    }
+    private void Shoot()
+    {
+        Vector3 direction;
+        if (transform.localScale.x == 1.0f) direction = Vector2.right;
+        else direction = Vector2.left;
+        GameObject bala = Instantiate(BalaPrefab, transform.position+direction*0.1f, Quaternion.identity);
+        bala.GetComponent<Bala_script>().SetDirection(direction);
     }
 
 IEnumerator HurtCharacter()
