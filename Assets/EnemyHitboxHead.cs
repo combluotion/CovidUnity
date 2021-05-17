@@ -11,6 +11,7 @@ private void OnTriggerEnter2D(Collider2D other) {
         GetComponent<BoxCollider2D>().enabled = false;
 
         gameObject.transform.parent.GetChild(1).gameObject.SetActive(true);
+        Destroy(gameObject.transform.parent.GetChild(2).gameObject);
 
         Destroy(gameObject.transform.parent.gameObject,0.5f);
 

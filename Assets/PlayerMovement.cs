@@ -6,9 +6,11 @@ public class PlayerMovement : MonoBehaviour
 {
     public float runSpeed = 1;
     public float jumpSpeed = 1;
+    public bool isHurt = false;
     Rigidbody2D rb2;
     SpriteRenderer spriteRenderer;
     Animator animator;
+    public GameObject BalaPrefab;
 
     public bool betterJump = true;
     public float highJump = 0.5f;
@@ -25,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     
     void FixedUpdate()
     {
+        if(!isHurt){
         if(Input.GetKey("d") || Input.GetKey("right")){
             rb2.velocity = new Vector2(runSpeed,rb2.velocity.y);
             spriteRenderer.flipX = false;
@@ -63,5 +66,28 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
+
+            if (Input.GetKey(KeyCode.E))
+            {
+                Shoot();
+            }
+        }
     }
+    private void Shoot()
+    {
+        Vector3 direction;
+        if (transform.localScale.x == 1.0f) direction = Vector2.right;
+        else direction = Vector2.left;
+        GameObject bala = Instantiate(BalaPrefab, transform.position+direction*0.1f, Quaternion.identity);
+        bala.GetComponent<Bala_script>().SetDirection(direction);
+    }
+
+IEnumerator HurtCharacter()
+{
+    isHurt = true;
+    animator.SetBool("Hurt",true);
+    yield return new WaitForSeconds(1.5f);
+    animator.SetBool("Hurt",false);
+    isHurt = false;
+}
 }
