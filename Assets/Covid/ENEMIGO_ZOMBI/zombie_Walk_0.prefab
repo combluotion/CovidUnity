@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6232979555918780595}
   - component: {fileID: 906502303166191859}
   - component: {fileID: 1257114450094596723}
+  - component: {fileID: 7484910514909414424}
   m_Layer: 0
   m_Name: zombie_Walk_0
   m_TagString: Untagged
@@ -124,7 +125,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 2
+  m_Constraints: 6
 --- !u!61 &1257114450094596723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -151,3 +152,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &7484910514909414424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9033341143937837927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7177680af53941e428fdca472aeef4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCharacter: {fileID: 4039382622681469434, guid: 1d34d55a3f699eb4a974bc8b1a771584, type: 3}
