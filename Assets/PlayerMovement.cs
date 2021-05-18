@@ -4,6 +4,7 @@ using UnityEngine;
 //Comment test to push
 public class PlayerMovement : MonoBehaviour
 {
+    private float Horizontal;
     public float runSpeed = 1;
     public float jumpSpeed = 1;
     public bool isHurt = false;
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Animator animator;
     public GameObject BalaPrefab;
+    private float LastShoot;
 
     public bool betterJump = true;
     public float highJump = 0.5f;
@@ -27,15 +29,19 @@ public class PlayerMovement : MonoBehaviour
     
     void FixedUpdate()
     {
-        if(!isHurt){
+        Horizontal = Input.GetAxisRaw("Horizontal");
+        if (Horizontal < 0.0f) transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        else if (Horizontal > 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+
+        if (!isHurt){
         if(Input.GetKey("d") || Input.GetKey("right")){
             rb2.velocity = new Vector2(runSpeed,rb2.velocity.y);
-            spriteRenderer.flipX = false;
+            //spriteRenderer.flipX = false;
             animator.SetBool("Run",true);
         }
         else if(Input.GetKey("a") || Input.GetKey("left")){
             rb2.velocity = new Vector2(-runSpeed,rb2.velocity.y);
-            spriteRenderer.flipX = true;
+            //spriteRenderer.flipX = true;
             animator.SetBool("Run",true);
         }
         else{
@@ -67,9 +73,10 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.E)&&Time.time>LastShoot+0.25f)
             {
                 Shoot();
+                LastShoot = Time.time;
             }
         }
     }
@@ -78,8 +85,9 @@ public class PlayerMovement : MonoBehaviour
         Vector3 direction;
         if (transform.localScale.x == 1.0f) direction = Vector2.right;
         else direction = Vector2.left;
-        GameObject bala = Instantiate(BalaPrefab, transform.position+direction*0.1f, Quaternion.identity);
+        GameObject bala = Instantiate(BalaPrefab, transform.position+(direction*0.1f), Quaternion.identity);
         bala.GetComponent<Bala_script>().SetDirection(direction);
+        
     }
 
 IEnumerator HurtCharacter()
