@@ -21,7 +21,13 @@ public class Zombie_Script : MonoBehaviour
         float distance = Mathf.Abs(MainCharacter.transform.position.x - transform.position.x);
         if (distance < 1.0f)
         {
-            animator.SetBool("Cerca", true);
+            Ataca();
+            
         }
+    }
+    private void Ataca()
+    {
+        Debug.Log("Ataca");
+        animator.SetBool("Cerca", true);
     }
 }
