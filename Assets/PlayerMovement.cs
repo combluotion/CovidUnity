@@ -77,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Shoot();
                 LastShoot = Time.time;
+
             }
         }
     }
@@ -87,7 +88,8 @@ public class PlayerMovement : MonoBehaviour
         else direction = Vector2.left;
         GameObject bala = Instantiate(BalaPrefab, transform.position+(direction*0.1f), Quaternion.identity);
         bala.GetComponent<Bala_script>().SetDirection(direction);
-        
+       
+
     }
 
 IEnumerator HurtCharacter()

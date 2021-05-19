@@ -55,15 +55,22 @@ public class IA_BASICA : MonoBehaviour
     IEnumerator CheckEnemyMoving()
     {
         actualPos = transform.position;
+
         yield return new WaitForSeconds(0.5f);
 
         if (transform.position.x<actualPos.x)
         {
             spriteRenderer.flipX = true;
+            animator.SetBool("idle",false);
         }
         else if(transform.position.x > actualPos.x)
         {
             spriteRenderer.flipX = false;
+            animator.SetBool("idle", false);
+        }
+        else if (transform.position.x == actualPos.x)
+        {
+            animator.SetBool("idle", true);
         }
 
 
