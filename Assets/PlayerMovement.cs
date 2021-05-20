@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private float Horizontal;
     public float runSpeed = 1;
+    private int vidas = 3;
     public float jumpSpeed = 1;
     public bool isHurt = false;
     Rigidbody2D rb2;
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;
     public GameObject BalaPrefab;
     private float LastShoot;
+    public GameObject deathPanel;
 
     public bool betterJump = true;
     public float highJump = 0.5f;
@@ -94,10 +96,21 @@ public class PlayerMovement : MonoBehaviour
 
 IEnumerator HurtCharacter()
 {
-    isHurt = true;
-    animator.SetBool("Hurt",true);
-    yield return new WaitForSeconds(1.5f);
-    animator.SetBool("Hurt",false);
-    isHurt = false;
+        
+        if (vidas < 1)
+        {
+            deathPanel.gameObject.SetActive(true);
+        }
+        else
+        {
+            isHurt = true;
+            animator.SetBool("Hurt", true);
+            yield return new WaitForSeconds(1.5f);
+            animator.SetBool("Hurt", false);
+            isHurt = false;
+            vidas--;
+        }
+
+    
 }
 }
