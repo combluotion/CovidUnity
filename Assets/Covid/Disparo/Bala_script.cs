@@ -32,4 +32,5 @@ public class Bala_script : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
 }
