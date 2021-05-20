@@ -99,10 +99,18 @@ IEnumerator HurtCharacter()
         
         if (vidas < 1 )
         {
+            Destroy(hearts[0].gameObject);
             deathPanel.gameObject.SetActive(true);
         }
         else
         {
+            if (vidas < 3) {
+                Destroy(hearts[2].gameObject);
+            }
+            if (vidas < 2)
+            {
+                Destroy(hearts[1].gameObject);
+            }
             isHurt = true;
             animator.SetBool("Hurt", true);
             yield return new WaitForSeconds(1.5f);
