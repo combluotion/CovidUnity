@@ -168,6 +168,7 @@ MonoBehaviour:
   runSpeed: 1
   jumpSpeed: 3
   isHurt: 0
+  BalaPrefab: {fileID: 3792213213593300036, guid: cf80b639db264fd41a4a4e423f76c8bb, type: 3}
   betterJump: 1
   highJump: 0.5
   lowJump: 1
