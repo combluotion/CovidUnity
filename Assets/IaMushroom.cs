@@ -7,6 +7,7 @@ public class IaMushroom : MonoBehaviour
     public float live;
     public float maxScale;
     public float actualLive;
+    public float points;
     private float scale = 1;
     Transform transform;
     public GameObject player;
@@ -16,7 +17,7 @@ public class IaMushroom : MonoBehaviour
     {
         actualLive = live;
         transform = GetComponent<Transform>();
-        player = GameObject.Find("SimonPlayer");
+        // player = GameObject.Find("SimonPlayer");
     }
 
     // Update is called once per frame
@@ -26,9 +27,19 @@ public class IaMushroom : MonoBehaviour
             if (scale < maxScale) {
                 scale = scale + 0.001f;
             }
+            transform.localScale = new Vector2(scale, scale);
         }
 
-        transform.localScale = new Vector2(scale, scale);
+        if (actualLive <= 0) {
+            Debug.Log("destruido");
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        player.GetComponent<ScoreScript>().UpdateScore(points);
+        Destroy(gameObject);
     }
 
     public void MoveBack()

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public GameObject optionsPanel;
+    public GameObject achievementsPanel;
 
     void Update(){
         if(Input.GetKey(KeyCode.Escape)){
@@ -22,13 +23,34 @@ public class UIManager : MonoBehaviour
     public void PauseGame()
     {
         Time.timeScale = 0;
+        CloseAllPanels();
         optionsPanel.SetActive(true);
     }
 
     public void ReturnGame()
     {
         Time.timeScale = 1;
+        CloseAllPanels();
+    }
+
+    public void MenuPrincipal()
+    {
+        SceneManager.LoadScene("MenuPrincipal", LoadSceneMode.Single);
+    }
+      
+
+    public void ShowAchievements()
+    {
+        CloseAllPanels();
+        achievementsPanel.SetActive(true);
+    }
+
+
+    public void CloseAllPanels()
+    {
         optionsPanel.SetActive(false);
+        achievementsPanel.SetActive(false);
+
     }
 
 }
