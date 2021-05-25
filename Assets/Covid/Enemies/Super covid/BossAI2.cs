@@ -15,12 +15,44 @@ public class BossAI2 : MonoBehaviour
      int i = 1;
 
      public float period = 0.0f;
-     
+    public float jumpforce = 2.5f;
+    public GameObject destroyParticle;
+    public int lifes = 10;
      void Start()
     {
         
     }
 
+
+     private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("VACUNA"))
+        {
+            collision.gameObject.GetComponent<Rigidbody2D>().velocity = (Vector2.up * jumpforce);
+            LoseLifeAndHit();
+            CheckLife();
+        }
+    }
+     public void LoseLifeAndHit()
+    {
+        lifes--;
+        animator.SetTrigger("Hurt");
+    }
+    public void CheckLife()
+    {
+        if (lifes == 0)
+        {
+            destroyParticle.SetActive(true);
+            animator.SetTrigger("Death");
+            //spriteRenderer.enabled = false;
+            Invoke("EnemyDie", 0.5f);
+        }
+    }
+    public void EnemyDie()
+    {
+        Destroy(gameObject);
+        AchievementManager.Instance.UnlockAchievement(Achievement.AchievementTypes.killBoss);
+    }
     // Update is called once per frame
     void Update()
     {

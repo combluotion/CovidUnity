@@ -13,15 +13,16 @@ public class Bala_script : MonoBehaviour
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
-        Camera.main.GetComponent<AudioSource>().PlayOneShot(Sound);
-        
+        // Camera.main.GetComponent<AudioSource>().PlayOneShot(Sound);
+       GetComponent<AudioSource>().PlayOneShot(Sound);
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         Rigidbody2D.velocity = Direction * Speed;
-        
+
 
     }
     public void SetDirection(Vector2 direction)

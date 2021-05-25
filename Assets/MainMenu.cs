@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public void EscenaJuego()
     {
-        SceneManager.LoadScene("Nivel Jungla");
+        SceneManager.LoadScene("Nivel 2");
     }
 
     public void Salir()
