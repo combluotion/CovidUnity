@@ -28,6 +28,13 @@ public class Bala_script : MonoBehaviour
     public void SetDirection(Vector2 direction)
     {
         Direction = direction;
+        if(direction.x == -1)
+        {
+            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        }
+        else{
+            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        }
     }
     public void DestroyBullet()
     {
