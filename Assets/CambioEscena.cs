@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class CambioEscena : MonoBehaviour
 {
     // Start is called before the first frame update
+    public string Escena;
     void Start()
     {
         
@@ -21,7 +22,7 @@ public class CambioEscena : MonoBehaviour
     {
      if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Nivel 3", LoadSceneMode.Single);
+            SceneManager.LoadScene(Escena, LoadSceneMode.Single);
         }
     }
 }
