@@ -16,6 +16,9 @@ public class Daño_Zombi : MonoBehaviour
 
     public int lifes = 2;
 
+    public float points = 3;
+    public GameObject player;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.CompareTag("VACUNA"))
@@ -42,6 +45,7 @@ public class Daño_Zombi : MonoBehaviour
     }
     public void EnemyDie()
     {
+        player.GetComponent<ScoreScript>().UpdateScore(points);
         Destroy(gameObject);
     }
 

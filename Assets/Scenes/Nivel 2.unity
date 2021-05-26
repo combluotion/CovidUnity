@@ -382,7 +382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2758263965812889543, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2758263965812889543, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -423,6 +423,14 @@ PrefabInstance:
     - target: {fileID: 2758263965812889543, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758263966924029260, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1951827298}
+    - target: {fileID: 2758263966924029260, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
+      propertyPath: points
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
@@ -1690,7 +1698,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3737512836590874668, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3737512836590874668, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1735,6 +1743,14 @@ PrefabInstance:
     - target: {fileID: 3737512836590874669, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_Name
       value: Father_Murcielago
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737512836658494364, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1951827298}
+    - target: {fileID: 3737512836658494364, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
+      propertyPath: points
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
@@ -1833,7 +1849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2758263965812889543, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2758263965812889543, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1874,6 +1890,14 @@ PrefabInstance:
     - target: {fileID: 2758263965812889543, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758263966924029260, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1951827298}
+    - target: {fileID: 2758263966924029260, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
+      propertyPath: points
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
@@ -2013,7 +2037,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3737512836590874668, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3737512836590874668, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2058,6 +2082,14 @@ PrefabInstance:
     - target: {fileID: 3737512836590874669, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_Name
       value: Father_Murcielago (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737512836658494364, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1951827298}
+    - target: {fileID: 3737512836658494364, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
+      propertyPath: points
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
@@ -2264,7 +2296,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3737512836590874668, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3737512836590874668, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2310,6 +2342,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Father_Murcielago (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3737512836658494364, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1951827298}
+    - target: {fileID: 3737512836658494364, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
+      propertyPath: points
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
 --- !u!1001 &1054393156
@@ -2325,7 +2365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2758263965812889543, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2758263965812889543, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2366,6 +2406,14 @@ PrefabInstance:
     - target: {fileID: 2758263965812889543, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758263966924029260, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1951827298}
+    - target: {fileID: 2758263966924029260, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
+      propertyPath: points
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
@@ -2574,6 +2622,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2758263966924029260, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1951827298}
+    - target: {fileID: 2758263966924029260, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
+      propertyPath: points
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecad37040c686f345bd3f416f08807a9, type: 3}
 --- !u!1001 &1111092148
@@ -2585,7 +2641,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3737512836590874668, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3737512836590874668, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2630,6 +2686,14 @@ PrefabInstance:
     - target: {fileID: 3737512836590874669, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_Name
       value: Father_Murcielago (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737512836658494364, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1951827298}
+    - target: {fileID: 3737512836658494364, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
+      propertyPath: points
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
@@ -9265,7 +9329,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3737512836590874668, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3737512836590874668, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9310,6 +9374,14 @@ PrefabInstance:
     - target: {fileID: 3737512836590874669, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_Name
       value: Father_Murcielago (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737512836658494364, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1951827298}
+    - target: {fileID: 3737512836658494364, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
+      propertyPath: points
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
@@ -9536,7 +9608,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7648201014260433505, guid: 3022a8481551aec4287979fbe6002775, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7648201014260433505, guid: 3022a8481551aec4287979fbe6002775, type: 3}
       propertyPath: m_LocalScale.x
@@ -9601,7 +9673,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3737512836590874668, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3737512836590874668, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9646,6 +9718,14 @@ PrefabInstance:
     - target: {fileID: 3737512836590874669, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
       propertyPath: m_Name
       value: Father_Murcielago (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737512836658494364, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1951827298}
+    - target: {fileID: 3737512836658494364, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
+      propertyPath: points
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0eb322619bc3532448b63894776ebdca, type: 3}
@@ -9861,7 +9941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2800179039138836653, guid: 24d8bc1ed740dec47a0580baaf1ba031, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2800179039138836653, guid: 24d8bc1ed740dec47a0580baaf1ba031, type: 3}
       propertyPath: m_AnchorMax.x
@@ -11053,15 +11133,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4039382622681469431, guid: 1d34d55a3f699eb4a974bc8b1a771584, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4039382622681469431, guid: 1d34d55a3f699eb4a974bc8b1a771584, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.71
+      value: 15.07
       objectReference: {fileID: 0}
     - target: {fileID: 4039382622681469431, guid: 1d34d55a3f699eb4a974bc8b1a771584, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.02
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: 4039382622681469431, guid: 1d34d55a3f699eb4a974bc8b1a771584, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11127,6 +11207,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9dd0779c450ef9b40be2824888b223ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1951827301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951827298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70780122e59e1a94c938ed96bc712a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1956241458 stripped

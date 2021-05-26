@@ -3,7 +3,12 @@ guid: 083afd6559d3dad4fbbcf735b5d69539
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - collider2D: {instanceID: 0}
+  - animator: {instanceID: 0}
+  - spriteRenderer: {instanceID: 0}
+  - destroyParticle: {instanceID: 0}
+  - player: {fileID: 4039382622681469434, guid: 1d34d55a3f699eb4a974bc8b1a771584, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
