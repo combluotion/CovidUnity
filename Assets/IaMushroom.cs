@@ -12,12 +12,10 @@ public class IaMushroom : MonoBehaviour
     Transform transform;
     public GameObject player;
 
-    // Start is called before the first frame update
     void Start()
     {
         actualLive = live;
         transform = GetComponent<Transform>();
-        // player = GameObject.Find("SimonPlayer");
     }
 
     // Update is called once per frame

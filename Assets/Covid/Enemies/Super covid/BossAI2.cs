@@ -18,9 +18,11 @@ public class BossAI2 : MonoBehaviour
     public float jumpforce = 2.5f;
     public GameObject destroyParticle;
     public int lifes = 10;
+    public float points;
+    public GameObject player;
      void Start()
     {
-        
+
     }
 
 
@@ -50,6 +52,7 @@ public class BossAI2 : MonoBehaviour
     }
     public void EnemyDie()
     {
+        player.GetComponent<ScoreScript>().UpdateScore(points);
         Destroy(gameObject);
         AchievementManager.Instance.UnlockAchievement(Achievement.AchievementTypes.killBoss);
     }
@@ -71,16 +74,16 @@ public class BossAI2 : MonoBehaviour
             HitAttack();
             period = 0;
             }
-            
+
             period += UnityEngine.Time.deltaTime;
         }
 
-        
+
     }
 
     void HitAttack()
     {
-        
+
         animator.SetTrigger("Attack"+i);
         if(i == 2) i = 1;
         else i = 2;
