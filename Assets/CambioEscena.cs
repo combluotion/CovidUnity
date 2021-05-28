@@ -7,6 +7,7 @@ public class CambioEscena : MonoBehaviour
 {
     // Start is called before the first frame update
     public string Escena;
+    public Achievement.AchievementTypes achievementType;
     void Start()
     {
         
@@ -22,6 +23,7 @@ public class CambioEscena : MonoBehaviour
     {
      if (other.gameObject.tag == "Player")
         {
+            AchievementManager.Instance.UnlockAchievement(achievementType);
             SceneManager.LoadScene(Escena, LoadSceneMode.Single);
         }
     }

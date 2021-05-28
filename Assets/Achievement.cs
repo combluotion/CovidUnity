@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Achievement : MonoBehaviour
 {
 
-public enum AchievementTypes {killBoss, nivelUno, nivelDos};
+public enum AchievementTypes {killBoss, nivelUno, nivelDos, nivelTres};
 [SerializeField] private AchievementTypes achievementType;
  public AchievementTypes _achievementType{get {return achievementType;}}
 private Text text;
